@@ -29,7 +29,18 @@
 ## Installation
 
 ```bash
-$ npm install
+$ yarn install
+```
+
+## Migration
+
+```bash
+update the ormconfig json as per yor local db configuration
+$ yarn run typrom migration:run
+
+if migration gives error while executing it
+try this CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+
 ```
 
 ## Running the app
