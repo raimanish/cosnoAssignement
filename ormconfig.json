@@ -1,0 +1,18 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": "5432",
+  "username": "postgres",
+  "password": "postgres",
+  "database": "conso_db",
+  "synchronize": false,
+  "logging": true,
+  "entities": ["dist/**/*.entity{.ts,.js}"],
+  "subscribers": ["dist/**/*.subscriber{.ts,.js}"],
+  "seeds": ["src/database/seeds/*.ts"],
+  "migrations": ["./dist/database/migrations/*.js"],    
+  "cli": {
+    "entitiesDir": "src",
+    "migrationsDir": "src/database/migrations"
+  }
+}
